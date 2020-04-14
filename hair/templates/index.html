@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="site-section cta-big-image" id="about-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center" data-aos="fade">
+        <h2 class="section-title mb-3"><marquee>Welcome To Saloon Booking App</marquee></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+        <figure class="circle-bg">
+        <img src="{% static 'images/beauty2.jpeg' %}" alt="Image" class="img-fluid">
+        </figure>
+      </div>
+      <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+        <div class="mb-4">
+          <h3 class="h3 mb-4 text-black">ONLINE SALOON BOOKING</h3>
+          <p><strong>Saloon Booking App</strong> Is an online Booking System where clients Can book for saloon services any time during the day, week or month.We have professional saloonist who can provied best services in town</p>
+          
+        </div>
+        <p><a href="" class="btn btn-primary mr-2 mb-2">Our Services</a></p>
+
+        
+          
+        <div class="mb-4">
+          <ul class="list-unstyled ul-check success">
+            <li>Hair Dressing</li>
+            <li>Ear Piecing</li>
+            <li>Tatooing</li>
+            <li>Dreadlocs</li>
+            <li>Face Scrabbing</li>
+            <li>Massage</li>
+          </ul>
+          
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>  
+</div>
+    </section>
+        
+{% endblock %}

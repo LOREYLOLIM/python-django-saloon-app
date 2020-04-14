@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<section class="site-section bg-light" id="pricing-section">
+    <div class="container">
+    
+<div class="row site-section" id="faq-section">
+    <div class="col-12 text-center" data-aos="fade">
+      <h2 class="section-title">Book When To be Attended</h2>
+    </div>
+  </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-20" style="margin-left: 40%;">
+          <div>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form|crispy}}
+                  <input type="submit" class="btn btn-outline-primary" value="BOOK">
+                </form>
+          </div>
+        </div>
+        </div>
+    </div>
+        </div>
+</section>
+
+{% endblock %}

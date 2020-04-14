@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container">
+    <table class="table" style="background-color: burlywood;">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        {% for B in Booking %}
+        <div>
+        <tbody>
+          <tr>
+            <th scope="row">{{B.Name}}</th>
+            <td>{{B.Phone}}</td>
+            <td>{{B.Time}}</td>
+          </tr>
+        </tbody>
+    </div>
+{% endfor %}
+</table>
+</div>
+{% endblock %}
